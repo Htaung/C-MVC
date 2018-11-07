@@ -1,0 +1,5 @@
+C:\Users\Htaung\Desktop\C# MVC\Day 7-1\Entities\bin\Debug\Entities.dll
+C:\Users\Htaung\Desktop\C# MVC\Day 7-1\Entities\bin\Debug\Entities.pdb
+C:\Users\Htaung\Desktop\C# MVC\Day 7-1\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache
+C:\Users\Htaung\Desktop\C# MVC\Day 7-1\Entities\obj\Debug\Entities.dll
+C:\Users\Htaung\Desktop\C# MVC\Day 7-1\Entities\obj\Debug\Entities.pdb

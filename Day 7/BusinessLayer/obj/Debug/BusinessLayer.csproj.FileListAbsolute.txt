@@ -1,0 +1,14 @@
+C:\Users\Htaung\Desktop\C# MVC\Day 7\BusinessLayer\obj\Debug\BusinessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Htaung\Desktop\C# MVC\Day 7\BusinessLayer\bin\Debug\BusinessLayer.dll.config
+C:\Users\Htaung\Desktop\C# MVC\Day 7\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\Htaung\Desktop\C# MVC\Day 7\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\Htaung\Desktop\C# MVC\Day 7\BusinessLayer\bin\Debug\BusinessEntities.dll
+C:\Users\Htaung\Desktop\C# MVC\Day 7\BusinessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Htaung\Desktop\C# MVC\Day 7\BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Htaung\Desktop\C# MVC\Day 7\BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Htaung\Desktop\C# MVC\Day 7\BusinessLayer\bin\Debug\BusinessEntities.pdb
+C:\Users\Htaung\Desktop\C# MVC\Day 7\BusinessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Htaung\Desktop\C# MVC\Day 7\BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Htaung\Desktop\C# MVC\Day 7\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Htaung\Desktop\C# MVC\Day 7\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\Htaung\Desktop\C# MVC\Day 7\BusinessLayer\obj\Debug\BusinessLayer.pdb

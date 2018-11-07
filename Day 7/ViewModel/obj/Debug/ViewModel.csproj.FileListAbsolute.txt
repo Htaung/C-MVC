@@ -1,0 +1,4 @@
+C:\Users\Htaung\Desktop\C# MVC\Day 7\ViewModel\bin\Debug\ViewModel.dll
+C:\Users\Htaung\Desktop\C# MVC\Day 7\ViewModel\bin\Debug\ViewModel.pdb
+C:\Users\Htaung\Desktop\C# MVC\Day 7\ViewModel\obj\Debug\ViewModel.dll
+C:\Users\Htaung\Desktop\C# MVC\Day 7\ViewModel\obj\Debug\ViewModel.pdb

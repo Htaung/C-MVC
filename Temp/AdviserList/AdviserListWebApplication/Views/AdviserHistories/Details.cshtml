@@ -1,0 +1,58 @@
+﻿@model AdviserListWebApplication.Models.AdviserHistory
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AdviserHistory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.latitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.latitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.longitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.longitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.displayFlag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.displayFlag)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.updatedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.updatedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Adviser.fullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adviser.fullName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.adviserHistoryId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

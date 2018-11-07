@@ -1,0 +1,64 @@
+﻿@model AdviserListWebApplication.Models.AdviserHistory
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>AdviserHistory</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.latitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.latitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.longitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.longitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.displayFlag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.displayFlag)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.updatedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.updatedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Adviser.fullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adviser.fullName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

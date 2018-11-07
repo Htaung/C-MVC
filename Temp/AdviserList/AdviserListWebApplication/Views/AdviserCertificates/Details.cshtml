@@ -1,0 +1,50 @@
+﻿@model AdviserListWebApplication.Models.AdviserCertificate
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AdviserCertificate</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.certificateName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.certificateName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.certificateDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.certificateDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.activeFlag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.activeFlag)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Adviser.fullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adviser.fullName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.adviserCertificateId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,68 @@
+﻿@using TestMVC.ViewModel;
+@model CreateEmployeeViewModel
+@{
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+
+@section TitleSection
+{
+    CreateEmployee
+}
+
+@section HeaderSection
+{
+    <script src="~/Scripts/Validation.js"></script>
+    <script>
+        function ResetForm() {
+            document.getElementById('txtFirstName').value = "";
+            document.getElementById('txtLastName').value = "";
+            document.getElementById('txtSalary').value = "";
+        }
+    </script>
+    
+}
+
+@section ContentBody
+{
+    <div>
+        <form action="/Employee/saveEmployee" method="post">
+            <table>
+                <tr>
+                    <td>First Name: </td>
+                    <td><input type="text" id="txtFirstName" name="FirstName" value="@Model.FirstName"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right">
+                        @Html.ValidationMessage("FirstName")
+                    </td>
+                </tr>
+                <tr>
+                    <td>Last Name: </td>
+                    <td><input type="text" id="txtLastName" name="LastName" value="@Model.LastName"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right">
+                        @Html.ValidationMessage("LastName")
+                    </td>
+                </tr>
+                <tr>
+                    <td>Salary: </td>
+                    <td><input type="text" id="txtSalary" name="Salary" value="@Model.Salary"/><br/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="right">
+                        @Html.ValidationMessage("Salary")
+                    </td>
+                </tr>
+
+
+            </table>
+            <input type="submit" name="btnSubmit" value="Save Employee" onclick="return IsValid();"/>
+            <input type="button" name="btnReset" value="Reset" onclick="ResetForm()"/>
+            <input type="submit" name="btnSubmit" value="Cancel"/>
+
+
+
+        </form>
+    </div>
+}

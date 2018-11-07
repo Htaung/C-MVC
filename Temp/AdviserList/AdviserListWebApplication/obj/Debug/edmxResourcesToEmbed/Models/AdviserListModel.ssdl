@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AdviserListDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Adviser">
+    <Key>
+      <PropertyRef Name="adviserId" />
+    </Key>
+    <Property Name="adviserId" Type="uniqueidentifier" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="fullName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="displayName" Type="nvarchar" MaxLength="100" />
+    <Property Name="nric" Type="nchar" MaxLength="10" />
+    <Property Name="dateOfBirth" Type="datetime" />
+    <Property Name="gender" Type="nchar" MaxLength="6" />
+    <Property Name="contactNumber" Type="nchar" MaxLength="20" />
+    <Property Name="email" Type="nvarchar" MaxLength="50" />
+    <Property Name="address" Type="nvarchar" MaxLength="100" />
+    <Property Name="aboutMeShort" Type="nvarchar" MaxLength="200" />
+    <Property Name="aboutMe" Type="nvarchar" MaxLength="500" />
+    <Property Name="creditCardNumber" Type="nchar" MaxLength="20" />
+    <Property Name="creditCardExpire" Type="date" />
+    <Property Name="recurringPaymentAgreementFlag" Type="bit" />
+    <Property Name="password" Type="nvarchar" MaxLength="300" />
+    <Property Name="createdDate" Type="datetime" StoreGeneratedPattern="Computed" />
+    <Property Name="updatedDate" Type="datetime" />
+    <Property Name="viewCountFromWeb" Type="bigint" />
+    <Property Name="viewCountFromApp" Type="bigint" />
+    <Property Name="activeFlag" Type="bit" />
+    <Property Name="rns" Type="nvarchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="AdviserCertificate">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="adviserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="certificateName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="certificateDescription" Type="nvarchar" MaxLength="200" />
+    <Property Name="createdDate" Type="datetime" />
+    <Property Name="activeFlag" Type="bit" />
+  </EntityType>
+  <EntityType Name="AdviserCompany">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="adviserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="companyId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="designation" Type="nvarchar" MaxLength="50" />
+    <Property Name="contactNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="email" Type="nvarchar" MaxLength="100" />
+    <Property Name="createdDate" Type="datetime" StoreGeneratedPattern="Computed" />
+    <Property Name="primaryFlag" Type="bit" />
+    <Property Name="activeFlag" Type="bit" StoreGeneratedPattern="Computed" />
+  </EntityType>
+  <EntityType Name="AdviserHistory">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="adviserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="latitude" Type="float" />
+    <Property Name="longitude" Type="float" />
+    <Property Name="displayFlag" Type="bit" />
+    <Property Name="updatedDate" Type="datetime" />
+  </EntityType>
+  <EntityType Name="AdviserPhoto">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="adviserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="location" Type="nvarchar" MaxLength="100" />
+    <Property Name="name" Type="nvarchar" MaxLength="50" />
+    <Property Name="type" Type="nchar" MaxLength="10" />
+    <Property Name="profileFlag" Type="bit" />
+    <Property Name="createdDate" Type="datetime" StoreGeneratedPattern="Computed" />
+    <Property Name="activeFlag" Type="bit" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="cityId" />
+    </Key>
+    <Property Name="cityId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="stateId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="companyId" />
+    </Key>
+    <Property Name="companyId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="companyName" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="webAddress" Type="nvarchar" MaxLength="300" />
+    <Property Name="address" Type="nvarchar" MaxLength="100" />
+    <Property Name="phone" Type="nvarchar" MaxLength="50" />
+    <Property Name="logo" Type="nvarchar" MaxLength="50" />
+    <Property Name="createdDate" Type="datetime" />
+    <Property Name="activeFlag" Type="bit" />
+  </EntityType>
+  <EntityType Name="Continent">
+    <Key>
+      <PropertyRef Name="continentId" />
+    </Key>
+    <Property Name="continentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="200" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="countryId" />
+    </Key>
+    <Property Name="countryId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="continentId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PromotionLocation">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="adviserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="locationAddress" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="latitude" Type="float" />
+    <Property Name="longitude" Type="float" />
+    <Property Name="effectiveDate" Type="date" />
+    <Property Name="expireDate" Type="date" />
+    <Property Name="createdDate" Type="datetime" />
+    <Property Name="description" Type="nvarchar" MaxLength="200" />
+    <Property Name="activeFlag" Type="bit" />
+    <Property Name="effectiveTime" Type="time" Precision="3" />
+    <Property Name="expireTime" Type="time" Precision="3" />
+    <Property Name="name" Type="nvarchar" MaxLength="100" />
+    <Property Name="cityId" Type="int" />
+  </EntityType>
+  <EntityType Name="State">
+    <Key>
+      <PropertyRef Name="stateId" />
+    </Key>
+    <Property Name="stateId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="nvarchar" MaxLength="200" Nullable="false" />
+    <Property Name="countryId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <Association Name="FK_AdviserCertificate_Adviser">
+    <End Role="Adviser" Type="Self.Adviser" Multiplicity="1" />
+    <End Role="AdviserCertificate" Type="Self.AdviserCertificate" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Adviser">
+        <PropertyRef Name="adviserId" />
+      </Principal>
+      <Dependent Role="AdviserCertificate">
+        <PropertyRef Name="adviserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdviserCompany_Adviser">
+    <End Role="Adviser" Type="Self.Adviser" Multiplicity="1" />
+    <End Role="AdviserCompany" Type="Self.AdviserCompany" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Adviser">
+        <PropertyRef Name="adviserId" />
+      </Principal>
+      <Dependent Role="AdviserCompany">
+        <PropertyRef Name="adviserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdviserCompany_Company">
+    <End Role="Company" Type="Self.Company" Multiplicity="1" />
+    <End Role="AdviserCompany" Type="Self.AdviserCompany" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="companyId" />
+      </Principal>
+      <Dependent Role="AdviserCompany">
+        <PropertyRef Name="companyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdviserHistory_Adviser">
+    <End Role="Adviser" Type="Self.Adviser" Multiplicity="1" />
+    <End Role="AdviserHistory" Type="Self.AdviserHistory" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Adviser">
+        <PropertyRef Name="adviserId" />
+      </Principal>
+      <Dependent Role="AdviserHistory">
+        <PropertyRef Name="adviserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_AdviserPhoto_Adviser">
+    <End Role="Adviser" Type="Self.Adviser" Multiplicity="1" />
+    <End Role="AdviserPhoto" Type="Self.AdviserPhoto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Adviser">
+        <PropertyRef Name="adviserId" />
+      </Principal>
+      <Dependent Role="AdviserPhoto">
+        <PropertyRef Name="adviserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_City_State">
+    <End Role="State" Type="Self.State" Multiplicity="1" />
+    <End Role="City" Type="Self.City" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="State">
+        <PropertyRef Name="stateId" />
+      </Principal>
+      <Dependent Role="City">
+        <PropertyRef Name="stateId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Country_Continent1">
+    <End Role="Continent" Type="Self.Continent" Multiplicity="1" />
+    <End Role="Country" Type="Self.Country" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Continent">
+        <PropertyRef Name="continentId" />
+      </Principal>
+      <Dependent Role="Country">
+        <PropertyRef Name="continentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PromotionLocation_Adviser">
+    <End Role="City" Type="Self.City" Multiplicity="0..1" />
+    <End Role="PromotionLocation" Type="Self.PromotionLocation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="cityId" />
+      </Principal>
+      <Dependent Role="PromotionLocation">
+        <PropertyRef Name="cityId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_State_Country">
+    <End Role="Country" Type="Self.Country" Multiplicity="1" />
+    <End Role="State" Type="Self.State" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Country">
+        <PropertyRef Name="countryId" />
+      </Principal>
+      <Dependent Role="State">
+        <PropertyRef Name="countryId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="AdviserCertificateDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="AdviserCertificateInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="adviserId" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="certificateName" Type="nvarchar" Mode="In" />
+    <Parameter Name="certificateDescription" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="AdviserCertificateUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="adviserId" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="certificateName" Type="nvarchar" Mode="In" />
+    <Parameter Name="certificateDescription" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="AdviserCompanyDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="AdviserCompanyInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="adviserId" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="companyId" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="designation" Type="nvarchar" Mode="In" />
+    <Parameter Name="contactNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="email" Type="nvarchar" Mode="In" />
+    <Parameter Name="primaryFlag" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="AdviserCompanySelectAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="AdviserCompanyUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="adviserId" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="companyId" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="designation" Type="nvarchar" Mode="In" />
+    <Parameter Name="contactNumber" Type="nvarchar" Mode="In" />
+    <Parameter Name="email" Type="nvarchar" Mode="In" />
+    <Parameter Name="primaryFlag" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="AdviserDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="adviserId" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="AdviserHistoryInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="adviserId" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="latitude" Type="float" Mode="In" />
+    <Parameter Name="longitude" Type="float" Mode="In" />
+    <Parameter Name="displayFlag" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="AdviserHistoryUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="adviserId" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="latitude" Type="float" Mode="In" />
+    <Parameter Name="longitude" Type="float" Mode="In" />
+    <Parameter Name="displayFlag" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="AdviserInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="fullName" Type="nvarchar" Mode="In" />
+    <Parameter Name="displayName" Type="nvarchar" Mode="In" />
+    <Parameter Name="nric" Type="nchar" Mode="In" />
+    <Parameter Name="dateOfBirth" Type="datetime" Mode="In" />
+    <Parameter Name="gender" Type="nchar" Mode="In" />
+    <Parameter Name="contactNumber" Type="nchar" Mode="In" />
+    <Parameter Name="email" Type="nvarchar" Mode="In" />
+    <Parameter Name="address" Type="nvarchar" Mode="In" />
+    <Parameter Name="aboutMeShort" Type="nvarchar" Mode="In" />
+    <Parameter Name="aboutMe" Type="nvarchar" Mode="In" />
+    <Parameter Name="creditCardNumber" Type="nchar" Mode="In" />
+    <Parameter Name="creditCardExpire" Type="date" Mode="In" />
+    <Parameter Name="recurringPaymentAgreementFlag" Type="bit" Mode="In" />
+    <Parameter Name="password" Type="nvarchar" Mode="In" />
+    <Parameter Name="viewCountFromWeb" Type="bigint" Mode="In" />
+    <Parameter Name="viewCountFromApp" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="AdviserPhotoInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="adviserId" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="location" Type="nvarchar" Mode="In" />
+    <Parameter Name="name" Type="nvarchar" Mode="In" />
+    <Parameter Name="type" Type="nchar" Mode="In" />
+    <Parameter Name="profileFlag" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="AdviserPhotoUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="adviserId" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="location" Type="nvarchar" Mode="In" />
+    <Parameter Name="name" Type="nvarchar" Mode="In" />
+    <Parameter Name="type" Type="nchar" Mode="In" />
+    <Parameter Name="profileFlag" Type="bit" Mode="In" />
+  </Function>
+  <Function Name="AdviserUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="adviserId" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="displayName" Type="nvarchar" Mode="In" />
+    <Parameter Name="nric" Type="nchar" Mode="In" />
+    <Parameter Name="dateOfBirth" Type="datetime" Mode="In" />
+    <Parameter Name="gender" Type="nchar" Mode="In" />
+    <Parameter Name="contactNumber" Type="nchar" Mode="In" />
+    <Parameter Name="email" Type="nvarchar" Mode="In" />
+    <Parameter Name="address" Type="nvarchar" Mode="In" />
+    <Parameter Name="aboutMeShort" Type="nvarchar" Mode="In" />
+    <Parameter Name="aboutMe" Type="nvarchar" Mode="In" />
+    <Parameter Name="creditCardNumber" Type="nchar" Mode="In" />
+    <Parameter Name="creditCardExpire" Type="date" Mode="In" />
+    <Parameter Name="recurringPaymentAgreementFlag" Type="bit" Mode="In" />
+    <Parameter Name="password" Type="nvarchar" Mode="In" />
+    <Parameter Name="viewCountFromWeb" Type="bigint" Mode="In" />
+    <Parameter Name="viewCountFromApp" Type="bigint" Mode="In" />
+  </Function>
+  <Function Name="PromotionLocationDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="uniqueidentifier" Mode="In" />
+  </Function>
+  <Function Name="PromotionLocationInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="adviserId" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="cityId" Type="int" Mode="In" />
+    <Parameter Name="locationAddress" Type="nvarchar" Mode="In" />
+    <Parameter Name="latitude" Type="float" Mode="In" />
+    <Parameter Name="longitude" Type="float" Mode="In" />
+    <Parameter Name="effectiveDate" Type="date" Mode="In" />
+    <Parameter Name="expiryDate" Type="date" Mode="In" />
+    <Parameter Name="effectiveTime" Type="time" Mode="In" />
+    <Parameter Name="expiryTime" Type="time" Mode="In" />
+    <Parameter Name="description" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="PromotionLocationUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="adviserId" Type="uniqueidentifier" Mode="In" />
+    <Parameter Name="locationAddress" Type="nvarchar" Mode="In" />
+    <Parameter Name="latitude" Type="float" Mode="In" />
+    <Parameter Name="longitude" Type="float" Mode="In" />
+    <Parameter Name="effectiveDate" Type="date" Mode="In" />
+    <Parameter Name="expireDate" Type="date" Mode="In" />
+    <Parameter Name="effectiveTime" Type="time" Mode="In" />
+    <Parameter Name="expireTime" Type="time" Mode="In" />
+    <Parameter Name="description" Type="nvarchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="AdviserListDBModelStoreContainer">
+    <EntitySet Name="Adviser" EntityType="Self.Adviser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AdviserCertificate" EntityType="Self.AdviserCertificate" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AdviserCompany" EntityType="Self.AdviserCompany" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AdviserHistory" EntityType="Self.AdviserHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="AdviserPhoto" EntityType="Self.AdviserPhoto" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="City" EntityType="Self.City" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Company" EntityType="Self.Company" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Continent" EntityType="Self.Continent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Country" EntityType="Self.Country" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PromotionLocation" EntityType="Self.PromotionLocation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="State" EntityType="Self.State" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_AdviserCertificate_Adviser" Association="Self.FK_AdviserCertificate_Adviser">
+      <End Role="Adviser" EntitySet="Adviser" />
+      <End Role="AdviserCertificate" EntitySet="AdviserCertificate" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdviserCompany_Adviser" Association="Self.FK_AdviserCompany_Adviser">
+      <End Role="Adviser" EntitySet="Adviser" />
+      <End Role="AdviserCompany" EntitySet="AdviserCompany" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdviserCompany_Company" Association="Self.FK_AdviserCompany_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="AdviserCompany" EntitySet="AdviserCompany" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdviserHistory_Adviser" Association="Self.FK_AdviserHistory_Adviser">
+      <End Role="Adviser" EntitySet="Adviser" />
+      <End Role="AdviserHistory" EntitySet="AdviserHistory" />
+    </AssociationSet>
+    <AssociationSet Name="FK_AdviserPhoto_Adviser" Association="Self.FK_AdviserPhoto_Adviser">
+      <End Role="Adviser" EntitySet="Adviser" />
+      <End Role="AdviserPhoto" EntitySet="AdviserPhoto" />
+    </AssociationSet>
+    <AssociationSet Name="FK_City_State" Association="Self.FK_City_State">
+      <End Role="State" EntitySet="State" />
+      <End Role="City" EntitySet="City" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Country_Continent1" Association="Self.FK_Country_Continent1">
+      <End Role="Continent" EntitySet="Continent" />
+      <End Role="Country" EntitySet="Country" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PromotionLocation_Adviser" Association="Self.FK_PromotionLocation_Adviser">
+      <End Role="City" EntitySet="City" />
+      <End Role="PromotionLocation" EntitySet="PromotionLocation" />
+    </AssociationSet>
+    <AssociationSet Name="FK_State_Country" Association="Self.FK_State_Country">
+      <End Role="Country" EntitySet="Country" />
+      <End Role="State" EntitySet="State" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,12 @@
+C:\Users\Htaung\Desktop\C# MVC\Day 7\DataAccessLayer\obj\Debug\DataAccessLayer.csprojResolveAssemblyReference.cache
+C:\Users\Htaung\Desktop\C# MVC\Day 7\DataAccessLayer\bin\Debug\DataAccessLayer.dll.config
+C:\Users\Htaung\Desktop\C# MVC\Day 7\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\Htaung\Desktop\C# MVC\Day 7\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\Htaung\Desktop\C# MVC\Day 7\DataAccessLayer\bin\Debug\BusinessEntities.dll
+C:\Users\Htaung\Desktop\C# MVC\Day 7\DataAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Htaung\Desktop\C# MVC\Day 7\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Htaung\Desktop\C# MVC\Day 7\DataAccessLayer\bin\Debug\BusinessEntities.pdb
+C:\Users\Htaung\Desktop\C# MVC\Day 7\DataAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Htaung\Desktop\C# MVC\Day 7\DataAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Htaung\Desktop\C# MVC\Day 7\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\Htaung\Desktop\C# MVC\Day 7\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

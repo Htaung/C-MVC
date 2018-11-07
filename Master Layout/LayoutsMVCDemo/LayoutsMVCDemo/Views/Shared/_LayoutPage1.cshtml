@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    @RenderSection("head", false)
+</head>
+<body>
+
+    @Html.ActionLink("Home", "Index", "My") |
+    @Html.ActionLink("AboutUs", "AboutUs", "My") |
+    @Html.ActionLink("ContactUS", "ContactUS", "My") |
+    @Html.ActionLink("Facebook", "Facebook", "My") |
+    @Html.ActionLink("Twitter", "Twitter", "My")
+
+    <br />
+    @RenderBody()
+    <br />
+
+    Hello Nitin Pandit…………This is the demo of Layout pages.
+
+</body>
+</html>  

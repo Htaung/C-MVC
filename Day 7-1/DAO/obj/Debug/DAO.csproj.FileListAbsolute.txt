@@ -1,0 +1,12 @@
+C:\Users\Htaung\Desktop\C# MVC\Day 7-1\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+C:\Users\Htaung\Desktop\C# MVC\Day 7-1\DAO\bin\Debug\DAO.dll.config
+C:\Users\Htaung\Desktop\C# MVC\Day 7-1\DAO\bin\Debug\DAO.dll
+C:\Users\Htaung\Desktop\C# MVC\Day 7-1\DAO\bin\Debug\DAO.pdb
+C:\Users\Htaung\Desktop\C# MVC\Day 7-1\DAO\bin\Debug\Entities.dll
+C:\Users\Htaung\Desktop\C# MVC\Day 7-1\DAO\bin\Debug\EntityFramework.dll
+C:\Users\Htaung\Desktop\C# MVC\Day 7-1\DAO\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Htaung\Desktop\C# MVC\Day 7-1\DAO\bin\Debug\Entities.pdb
+C:\Users\Htaung\Desktop\C# MVC\Day 7-1\DAO\bin\Debug\EntityFramework.xml
+C:\Users\Htaung\Desktop\C# MVC\Day 7-1\DAO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Htaung\Desktop\C# MVC\Day 7-1\DAO\obj\Debug\DAO.dll
+C:\Users\Htaung\Desktop\C# MVC\Day 7-1\DAO\obj\Debug\DAO.pdb

@@ -1,0 +1,1145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="AdviserListDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Adviser">
+          <Key>
+            <PropertyRef Name="adviserId" />
+          </Key>
+          <Property Name="adviserId" Type="uniqueidentifier" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="fullName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="displayName" Type="nvarchar" MaxLength="100" />
+          <Property Name="nric" Type="nchar" MaxLength="10" />
+          <Property Name="dateOfBirth" Type="datetime" />
+          <Property Name="gender" Type="nchar" MaxLength="6" />
+          <Property Name="contactNumber" Type="nchar" MaxLength="20" />
+          <Property Name="email" Type="nvarchar" MaxLength="50" />
+          <Property Name="address" Type="nvarchar" MaxLength="100" />
+          <Property Name="aboutMeShort" Type="nvarchar" MaxLength="200" />
+          <Property Name="aboutMe" Type="nvarchar" MaxLength="500" />
+          <Property Name="creditCardNumber" Type="nchar" MaxLength="20" />
+          <Property Name="creditCardExpire" Type="date" />
+          <Property Name="recurringPaymentAgreementFlag" Type="bit" />
+          <Property Name="password" Type="nvarchar" MaxLength="300" />
+          <Property Name="createdDate" Type="datetime" StoreGeneratedPattern="Computed" />
+          <Property Name="updatedDate" Type="datetime" />
+          <Property Name="viewCountFromWeb" Type="bigint" />
+          <Property Name="viewCountFromApp" Type="bigint" />
+          <Property Name="activeFlag" Type="bit" />
+          <Property Name="rns" Type="nvarchar" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="AdviserCertificate">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="adviserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="certificateName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="certificateDescription" Type="nvarchar" MaxLength="200" />
+          <Property Name="createdDate" Type="datetime" />
+          <Property Name="activeFlag" Type="bit" />
+        </EntityType>
+        <EntityType Name="AdviserCompany">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="uniqueidentifier" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="adviserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="companyId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="designation" Type="nvarchar" MaxLength="50" />
+          <Property Name="contactNumber" Type="nvarchar" MaxLength="50" />
+          <Property Name="email" Type="nvarchar" MaxLength="100" />
+          <Property Name="createdDate" Type="datetime" StoreGeneratedPattern="Computed" />
+          <Property Name="primaryFlag" Type="bit" />
+          <Property Name="activeFlag" Type="bit" StoreGeneratedPattern="Computed" />
+        </EntityType>
+        <EntityType Name="AdviserHistory">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="adviserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="latitude" Type="float" />
+          <Property Name="longitude" Type="float" />
+          <Property Name="displayFlag" Type="bit" />
+          <Property Name="updatedDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="AdviserPhoto">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="uniqueidentifier" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="adviserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="location" Type="nvarchar" MaxLength="100" />
+          <Property Name="name" Type="nvarchar" MaxLength="50" />
+          <Property Name="type" Type="nchar" MaxLength="10" />
+          <Property Name="profileFlag" Type="bit" />
+          <Property Name="createdDate" Type="datetime" StoreGeneratedPattern="Computed" />
+          <Property Name="activeFlag" Type="bit" />
+        </EntityType>
+        <EntityType Name="City">
+          <Key>
+            <PropertyRef Name="cityId" />
+          </Key>
+          <Property Name="cityId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="stateId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Company">
+          <Key>
+            <PropertyRef Name="companyId" />
+          </Key>
+          <Property Name="companyId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="companyName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="webAddress" Type="nvarchar" MaxLength="300" />
+          <Property Name="address" Type="nvarchar" MaxLength="100" />
+          <Property Name="phone" Type="nvarchar" MaxLength="50" />
+          <Property Name="logo" Type="nvarchar" MaxLength="50" />
+          <Property Name="createdDate" Type="datetime" />
+          <Property Name="activeFlag" Type="bit" />
+        </EntityType>
+        <EntityType Name="Continent">
+          <Key>
+            <PropertyRef Name="continentId" />
+          </Key>
+          <Property Name="continentId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="200" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Country">
+          <Key>
+            <PropertyRef Name="countryId" />
+          </Key>
+          <Property Name="countryId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="continentId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="PromotionLocation">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="adviserId" Type="uniqueidentifier" Nullable="false" />
+          <Property Name="locationAddress" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="latitude" Type="float" />
+          <Property Name="longitude" Type="float" />
+          <Property Name="effectiveDate" Type="date" />
+          <Property Name="expireDate" Type="date" />
+          <Property Name="createdDate" Type="datetime" />
+          <Property Name="description" Type="nvarchar" MaxLength="200" />
+          <Property Name="activeFlag" Type="bit" />
+          <Property Name="effectiveTime" Type="time" Precision="3" />
+          <Property Name="expireTime" Type="time" Precision="3" />
+          <Property Name="name" Type="nvarchar" MaxLength="100" />
+          <Property Name="cityId" Type="int" />
+        </EntityType>
+        <EntityType Name="State">
+          <Key>
+            <PropertyRef Name="stateId" />
+          </Key>
+          <Property Name="stateId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="name" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="countryId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <Association Name="FK_AdviserCertificate_Adviser">
+          <End Role="Adviser" Type="Self.Adviser" Multiplicity="1" />
+          <End Role="AdviserCertificate" Type="Self.AdviserCertificate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Adviser">
+              <PropertyRef Name="adviserId" />
+            </Principal>
+            <Dependent Role="AdviserCertificate">
+              <PropertyRef Name="adviserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AdviserCompany_Adviser">
+          <End Role="Adviser" Type="Self.Adviser" Multiplicity="1" />
+          <End Role="AdviserCompany" Type="Self.AdviserCompany" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Adviser">
+              <PropertyRef Name="adviserId" />
+            </Principal>
+            <Dependent Role="AdviserCompany">
+              <PropertyRef Name="adviserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AdviserCompany_Company">
+          <End Role="Company" Type="Self.Company" Multiplicity="1" />
+          <End Role="AdviserCompany" Type="Self.AdviserCompany" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Company">
+              <PropertyRef Name="companyId" />
+            </Principal>
+            <Dependent Role="AdviserCompany">
+              <PropertyRef Name="companyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AdviserHistory_Adviser">
+          <End Role="Adviser" Type="Self.Adviser" Multiplicity="1" />
+          <End Role="AdviserHistory" Type="Self.AdviserHistory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Adviser">
+              <PropertyRef Name="adviserId" />
+            </Principal>
+            <Dependent Role="AdviserHistory">
+              <PropertyRef Name="adviserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AdviserPhoto_Adviser">
+          <End Role="Adviser" Type="Self.Adviser" Multiplicity="1" />
+          <End Role="AdviserPhoto" Type="Self.AdviserPhoto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Adviser">
+              <PropertyRef Name="adviserId" />
+            </Principal>
+            <Dependent Role="AdviserPhoto">
+              <PropertyRef Name="adviserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_City_State">
+          <End Role="State" Type="Self.State" Multiplicity="1" />
+          <End Role="City" Type="Self.City" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="State">
+              <PropertyRef Name="stateId" />
+            </Principal>
+            <Dependent Role="City">
+              <PropertyRef Name="stateId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Country_Continent1">
+          <End Role="Continent" Type="Self.Continent" Multiplicity="1" />
+          <End Role="Country" Type="Self.Country" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Continent">
+              <PropertyRef Name="continentId" />
+            </Principal>
+            <Dependent Role="Country">
+              <PropertyRef Name="continentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PromotionLocation_Adviser">
+          <End Role="City" Type="Self.City" Multiplicity="0..1" />
+          <End Role="PromotionLocation" Type="Self.PromotionLocation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="City">
+              <PropertyRef Name="cityId" />
+            </Principal>
+            <Dependent Role="PromotionLocation">
+              <PropertyRef Name="cityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_State_Country">
+          <End Role="Country" Type="Self.Country" Multiplicity="1" />
+          <End Role="State" Type="Self.State" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Country">
+              <PropertyRef Name="countryId" />
+            </Principal>
+            <Dependent Role="State">
+              <PropertyRef Name="countryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Function Name="AdviserCertificateDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="AdviserCertificateInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="adviserId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="certificateName" Type="nvarchar" Mode="In" />
+          <Parameter Name="certificateDescription" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="AdviserCertificateUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="adviserId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="certificateName" Type="nvarchar" Mode="In" />
+          <Parameter Name="certificateDescription" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="AdviserCompanyDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="AdviserCompanyInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="adviserId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="companyId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="designation" Type="nvarchar" Mode="In" />
+          <Parameter Name="contactNumber" Type="nvarchar" Mode="In" />
+          <Parameter Name="email" Type="nvarchar" Mode="In" />
+          <Parameter Name="primaryFlag" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="AdviserCompanySelectAll" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+        <Function Name="AdviserCompanyUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="adviserId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="companyId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="designation" Type="nvarchar" Mode="In" />
+          <Parameter Name="contactNumber" Type="nvarchar" Mode="In" />
+          <Parameter Name="email" Type="nvarchar" Mode="In" />
+          <Parameter Name="primaryFlag" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="AdviserDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="adviserId" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="AdviserHistoryInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="adviserId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="latitude" Type="float" Mode="In" />
+          <Parameter Name="longitude" Type="float" Mode="In" />
+          <Parameter Name="displayFlag" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="AdviserHistoryUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="adviserId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="latitude" Type="float" Mode="In" />
+          <Parameter Name="longitude" Type="float" Mode="In" />
+          <Parameter Name="displayFlag" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="AdviserInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="fullName" Type="nvarchar" Mode="In" />
+          <Parameter Name="displayName" Type="nvarchar" Mode="In" />
+          <Parameter Name="nric" Type="nchar" Mode="In" />
+          <Parameter Name="dateOfBirth" Type="datetime" Mode="In" />
+          <Parameter Name="gender" Type="nchar" Mode="In" />
+          <Parameter Name="contactNumber" Type="nchar" Mode="In" />
+          <Parameter Name="email" Type="nvarchar" Mode="In" />
+          <Parameter Name="address" Type="nvarchar" Mode="In" />
+          <Parameter Name="aboutMeShort" Type="nvarchar" Mode="In" />
+          <Parameter Name="aboutMe" Type="nvarchar" Mode="In" />
+          <Parameter Name="creditCardNumber" Type="nchar" Mode="In" />
+          <Parameter Name="creditCardExpire" Type="date" Mode="In" />
+          <Parameter Name="recurringPaymentAgreementFlag" Type="bit" Mode="In" />
+          <Parameter Name="password" Type="nvarchar" Mode="In" />
+          <Parameter Name="viewCountFromWeb" Type="bigint" Mode="In" />
+          <Parameter Name="viewCountFromApp" Type="bigint" Mode="In" />
+        </Function>
+        <Function Name="AdviserPhotoInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="adviserId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="location" Type="nvarchar" Mode="In" />
+          <Parameter Name="name" Type="nvarchar" Mode="In" />
+          <Parameter Name="type" Type="nchar" Mode="In" />
+          <Parameter Name="profileFlag" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="AdviserPhotoUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="adviserId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="location" Type="nvarchar" Mode="In" />
+          <Parameter Name="name" Type="nvarchar" Mode="In" />
+          <Parameter Name="type" Type="nchar" Mode="In" />
+          <Parameter Name="profileFlag" Type="bit" Mode="In" />
+        </Function>
+        <Function Name="AdviserUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="adviserId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="displayName" Type="nvarchar" Mode="In" />
+          <Parameter Name="nric" Type="nchar" Mode="In" />
+          <Parameter Name="dateOfBirth" Type="datetime" Mode="In" />
+          <Parameter Name="gender" Type="nchar" Mode="In" />
+          <Parameter Name="contactNumber" Type="nchar" Mode="In" />
+          <Parameter Name="email" Type="nvarchar" Mode="In" />
+          <Parameter Name="address" Type="nvarchar" Mode="In" />
+          <Parameter Name="aboutMeShort" Type="nvarchar" Mode="In" />
+          <Parameter Name="aboutMe" Type="nvarchar" Mode="In" />
+          <Parameter Name="creditCardNumber" Type="nchar" Mode="In" />
+          <Parameter Name="creditCardExpire" Type="date" Mode="In" />
+          <Parameter Name="recurringPaymentAgreementFlag" Type="bit" Mode="In" />
+          <Parameter Name="password" Type="nvarchar" Mode="In" />
+          <Parameter Name="viewCountFromWeb" Type="bigint" Mode="In" />
+          <Parameter Name="viewCountFromApp" Type="bigint" Mode="In" />
+        </Function>
+        <Function Name="PromotionLocationDelete" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="uniqueidentifier" Mode="In" />
+        </Function>
+        <Function Name="PromotionLocationInsert" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="adviserId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="cityId" Type="int" Mode="In" />
+          <Parameter Name="locationAddress" Type="nvarchar" Mode="In" />
+          <Parameter Name="latitude" Type="float" Mode="In" />
+          <Parameter Name="longitude" Type="float" Mode="In" />
+          <Parameter Name="effectiveDate" Type="date" Mode="In" />
+          <Parameter Name="expiryDate" Type="date" Mode="In" />
+          <Parameter Name="effectiveTime" Type="time" Mode="In" />
+          <Parameter Name="expiryTime" Type="time" Mode="In" />
+          <Parameter Name="description" Type="nvarchar" Mode="In" />
+        </Function>
+        <Function Name="PromotionLocationUpdate" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+          <Parameter Name="id" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="adviserId" Type="uniqueidentifier" Mode="In" />
+          <Parameter Name="locationAddress" Type="nvarchar" Mode="In" />
+          <Parameter Name="latitude" Type="float" Mode="In" />
+          <Parameter Name="longitude" Type="float" Mode="In" />
+          <Parameter Name="effectiveDate" Type="date" Mode="In" />
+          <Parameter Name="expireDate" Type="date" Mode="In" />
+          <Parameter Name="effectiveTime" Type="time" Mode="In" />
+          <Parameter Name="expireTime" Type="time" Mode="In" />
+          <Parameter Name="description" Type="nvarchar" Mode="In" />
+        </Function>
+        <EntityContainer Name="AdviserListDBModelStoreContainer">
+          <EntitySet Name="Adviser" EntityType="Self.Adviser" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AdviserCertificate" EntityType="Self.AdviserCertificate" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AdviserCompany" EntityType="Self.AdviserCompany" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AdviserHistory" EntityType="Self.AdviserHistory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="AdviserPhoto" EntityType="Self.AdviserPhoto" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="City" EntityType="Self.City" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Company" EntityType="Self.Company" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Continent" EntityType="Self.Continent" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Country" EntityType="Self.Country" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PromotionLocation" EntityType="Self.PromotionLocation" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="State" EntityType="Self.State" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_AdviserCertificate_Adviser" Association="Self.FK_AdviserCertificate_Adviser">
+            <End Role="Adviser" EntitySet="Adviser" />
+            <End Role="AdviserCertificate" EntitySet="AdviserCertificate" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AdviserCompany_Adviser" Association="Self.FK_AdviserCompany_Adviser">
+            <End Role="Adviser" EntitySet="Adviser" />
+            <End Role="AdviserCompany" EntitySet="AdviserCompany" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AdviserCompany_Company" Association="Self.FK_AdviserCompany_Company">
+            <End Role="Company" EntitySet="Company" />
+            <End Role="AdviserCompany" EntitySet="AdviserCompany" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AdviserHistory_Adviser" Association="Self.FK_AdviserHistory_Adviser">
+            <End Role="Adviser" EntitySet="Adviser" />
+            <End Role="AdviserHistory" EntitySet="AdviserHistory" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AdviserPhoto_Adviser" Association="Self.FK_AdviserPhoto_Adviser">
+            <End Role="Adviser" EntitySet="Adviser" />
+            <End Role="AdviserPhoto" EntitySet="AdviserPhoto" />
+          </AssociationSet>
+          <AssociationSet Name="FK_City_State" Association="Self.FK_City_State">
+            <End Role="State" EntitySet="State" />
+            <End Role="City" EntitySet="City" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Country_Continent1" Association="Self.FK_Country_Continent1">
+            <End Role="Continent" EntitySet="Continent" />
+            <End Role="Country" EntitySet="Country" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PromotionLocation_Adviser" Association="Self.FK_PromotionLocation_Adviser">
+            <End Role="City" EntitySet="City" />
+            <End Role="PromotionLocation" EntitySet="PromotionLocation" />
+          </AssociationSet>
+          <AssociationSet Name="FK_State_Country" Association="Self.FK_State_Country">
+            <End Role="Country" EntitySet="Country" />
+            <End Role="State" EntitySet="State" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AdviserListDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="AdviserListDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Advisers" EntityType="AdviserListDBModel.Adviser" />
+          <EntitySet Name="AdviserCertificates" EntityType="AdviserListDBModel.AdviserCertificate" />
+          <EntitySet Name="AdviserCompanies" EntityType="AdviserListDBModel.AdviserCompany" />
+          <EntitySet Name="AdviserHistories" EntityType="AdviserListDBModel.AdviserHistory" />
+          <EntitySet Name="AdviserPhotoes" EntityType="AdviserListDBModel.AdviserPhoto" />
+          <EntitySet Name="Companies" EntityType="AdviserListDBModel.Company" />
+          <EntitySet Name="PromotionLocations" EntityType="AdviserListDBModel.PromotionLocation" />
+          <AssociationSet Name="FK_AdviserCertificate_Adviser" Association="AdviserListDBModel.FK_AdviserCertificate_Adviser">
+            <End Role="Adviser" EntitySet="Advisers" />
+            <End Role="AdviserCertificate" EntitySet="AdviserCertificates" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AdviserCompany_Adviser" Association="AdviserListDBModel.FK_AdviserCompany_Adviser">
+            <End Role="Adviser" EntitySet="Advisers" />
+            <End Role="AdviserCompany" EntitySet="AdviserCompanies" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AdviserHistory_Adviser" Association="AdviserListDBModel.FK_AdviserHistory_Adviser">
+            <End Role="Adviser" EntitySet="Advisers" />
+            <End Role="AdviserHistory" EntitySet="AdviserHistories" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AdviserPhoto_Adviser" Association="AdviserListDBModel.FK_AdviserPhoto_Adviser">
+            <End Role="Adviser" EntitySet="Advisers" />
+            <End Role="AdviserPhoto" EntitySet="AdviserPhotoes" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PromotionLocation_Adviser" Association="AdviserListDBModel.FK_PromotionLocation_Adviser">
+            <End Role="Adviser" EntitySet="Advisers" />
+            <End Role="PromotionLocation" EntitySet="PromotionLocations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_AdviserCompany_Company" Association="AdviserListDBModel.FK_AdviserCompany_Company">
+            <End Role="Company" EntitySet="Companies" />
+            <End Role="AdviserCompany" EntitySet="AdviserCompanies" />
+          </AssociationSet>
+          <FunctionImport Name="AdviserCompanyDelete">
+          <Parameter Name="id" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="AdviserCompanyInsert">
+            <Parameter Name="adviserId" Mode="In" Type="Guid" />
+            <Parameter Name="companyId" Mode="In" Type="Guid" />
+            <Parameter Name="designation" Mode="In" Type="String" />
+            <Parameter Name="contactNumber" Mode="In" Type="String" />
+            <Parameter Name="email" Mode="In" Type="String" />
+            <Parameter Name="primaryFlag" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="AdviserCompanySelectAll" ReturnType="Collection(AdviserListDBModel.AdviserCompanySelectAll_Result)" />
+          <FunctionImport Name="AdviserCompanyUpdate">
+            <Parameter Name="id" Mode="In" Type="Guid" />
+            <Parameter Name="adviserId" Mode="In" Type="Guid" />
+            <Parameter Name="companyId" Mode="In" Type="Guid" />
+            <Parameter Name="designation" Mode="In" Type="String" />
+            <Parameter Name="contactNumber" Mode="In" Type="String" />
+            <Parameter Name="email" Mode="In" Type="String" />
+            <Parameter Name="primaryFlag" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="AdviserCertificateDelete">
+          <Parameter Name="id" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="AdviserCertificateInsert">
+            <Parameter Name="adviserId" Mode="In" Type="Guid" />
+            <Parameter Name="certificateName" Mode="In" Type="String" />
+            <Parameter Name="certificateDescription" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="AdviserCertificateUpdate">
+            <Parameter Name="id" Mode="In" Type="Guid" />
+            <Parameter Name="adviserId" Mode="In" Type="Guid" />
+            <Parameter Name="certificateName" Mode="In" Type="String" />
+            <Parameter Name="certificateDescription" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="AdviserDelete">
+          <Parameter Name="adviserId" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="AdviserHistoryInsert">
+            <Parameter Name="adviserId" Mode="In" Type="Guid" />
+            <Parameter Name="latitude" Mode="In" Type="Double" />
+            <Parameter Name="longitude" Mode="In" Type="Double" />
+            <Parameter Name="displayFlag" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="AdviserHistoryUpdate">
+            <Parameter Name="id" Mode="In" Type="Guid" />
+            <Parameter Name="adviserId" Mode="In" Type="Guid" />
+            <Parameter Name="latitude" Mode="In" Type="Double" />
+            <Parameter Name="longitude" Mode="In" Type="Double" />
+            <Parameter Name="displayFlag" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="AdviserInsert" ReturnType="Collection(Decimal)">
+            <Parameter Name="fullName" Mode="In" Type="String" />
+            <Parameter Name="displayName" Mode="In" Type="String" />
+            <Parameter Name="nric" Mode="In" Type="String" />
+            <Parameter Name="dateOfBirth" Mode="In" Type="DateTime" />
+            <Parameter Name="gender" Mode="In" Type="String" />
+            <Parameter Name="contactNumber" Mode="In" Type="String" />
+            <Parameter Name="email" Mode="In" Type="String" />
+            <Parameter Name="address" Mode="In" Type="String" />
+            <Parameter Name="aboutMeShort" Mode="In" Type="String" />
+            <Parameter Name="aboutMe" Mode="In" Type="String" />
+            <Parameter Name="creditCardNumber" Mode="In" Type="String" />
+            <Parameter Name="creditCardExpire" Mode="In" Type="DateTime" />
+            <Parameter Name="recurringPaymentAgreementFlag" Mode="In" Type="Boolean" />
+            <Parameter Name="password" Mode="In" Type="String" />
+            <Parameter Name="viewCountFromWeb" Mode="In" Type="Int64" />
+            <Parameter Name="viewCountFromApp" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="AdviserUpdate">
+            <Parameter Name="adviserId" Mode="In" Type="Guid" />
+            <Parameter Name="displayName" Mode="In" Type="String" />
+            <Parameter Name="nric" Mode="In" Type="String" />
+            <Parameter Name="dateOfBirth" Mode="In" Type="DateTime" />
+            <Parameter Name="gender" Mode="In" Type="String" />
+            <Parameter Name="contactNumber" Mode="In" Type="String" />
+            <Parameter Name="email" Mode="In" Type="String" />
+            <Parameter Name="address" Mode="In" Type="String" />
+            <Parameter Name="aboutMeShort" Mode="In" Type="String" />
+            <Parameter Name="aboutMe" Mode="In" Type="String" />
+            <Parameter Name="creditCardNumber" Mode="In" Type="String" />
+            <Parameter Name="creditCardExpire" Mode="In" Type="DateTime" />
+            <Parameter Name="recurringPaymentAgreementFlag" Mode="In" Type="Boolean" />
+            <Parameter Name="password" Mode="In" Type="String" />
+            <Parameter Name="viewCountFromWeb" Mode="In" Type="Int64" />
+            <Parameter Name="viewCountFromApp" Mode="In" Type="Int64" />
+          </FunctionImport>
+          <FunctionImport Name="PromotionLocationDelete">
+          <Parameter Name="id" Mode="In" Type="Guid" />
+          </FunctionImport>
+          <FunctionImport Name="PromotionLocationInsert">
+            <Parameter Name="adviserId" Mode="In" Type="Guid" />
+            <Parameter Name="cityId" Mode="In" Type="Int32" />
+            <Parameter Name="locationAddress" Mode="In" Type="String" />
+            <Parameter Name="latitude" Mode="In" Type="Double" />
+            <Parameter Name="longitude" Mode="In" Type="Double" />
+            <Parameter Name="effectiveDate" Mode="In" Type="DateTime" />
+            <Parameter Name="expiryDate" Mode="In" Type="DateTime" />
+            <Parameter Name="effectiveTime" Mode="In" Type="Time" />
+            <Parameter Name="expiryTime" Mode="In" Type="Time" />
+            <Parameter Name="description" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="PromotionLocationUpdate">
+            <Parameter Name="id" Mode="In" Type="Guid" />
+            <Parameter Name="adviserId" Mode="In" Type="Guid" />
+            <Parameter Name="locationAddress" Mode="In" Type="String" />
+            <Parameter Name="latitude" Mode="In" Type="Double" />
+            <Parameter Name="longitude" Mode="In" Type="Double" />
+            <Parameter Name="effectiveDate" Mode="In" Type="DateTime" />
+            <Parameter Name="expireDate" Mode="In" Type="DateTime" />
+            <Parameter Name="effectiveTime" Mode="In" Type="Time" />
+            <Parameter Name="expireTime" Mode="In" Type="Time" />
+            <Parameter Name="description" Mode="In" Type="String" />
+          </FunctionImport>
+          <FunctionImport Name="AdviserPhotoInsert" ReturnType="Collection(Decimal)">
+            <Parameter Name="adviserId" Mode="In" Type="Guid" />
+            <Parameter Name="location" Mode="In" Type="String" />
+            <Parameter Name="name" Mode="In" Type="String" />
+            <Parameter Name="type" Mode="In" Type="String" />
+            <Parameter Name="profileFlag" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <FunctionImport Name="AdviserPhotoUpdate">
+            <Parameter Name="id" Mode="In" Type="Guid" />
+            <Parameter Name="adviserId" Mode="In" Type="Guid" />
+            <Parameter Name="location" Mode="In" Type="String" />
+            <Parameter Name="name" Mode="In" Type="String" />
+            <Parameter Name="type" Mode="In" Type="String" />
+            <Parameter Name="profileFlag" Mode="In" Type="Boolean" />
+          </FunctionImport>
+          <EntitySet Name="Cities" EntityType="AdviserListDBModel.City" />
+          <EntitySet Name="Continents" EntityType="AdviserListDBModel.Continent" />
+          <EntitySet Name="Countries" EntityType="AdviserListDBModel.Country" />
+          <EntitySet Name="States" EntityType="AdviserListDBModel.State" />
+          <EntitySet Name="sysdiagrams" EntityType="AdviserListDBModel.sysdiagram" />
+          <AssociationSet Name="FK_PromotionLocation_Adviser2" Association="AdviserListDBModel.FK_PromotionLocation_Adviser2">
+            <End Role="City" EntitySet="Cities" />
+            <End Role="PromotionLocation" EntitySet="PromotionLocations" />
+          </AssociationSet>
+          <AssociationSet Name="FK_City_State1" Association="AdviserListDBModel.FK_City_State1">
+            <End Role="State" EntitySet="States" />
+            <End Role="City" EntitySet="Cities" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Country_Continent11" Association="AdviserListDBModel.FK_Country_Continent11">
+            <End Role="Continent" EntitySet="Continents" />
+            <End Role="Country" EntitySet="Countries" />
+          </AssociationSet>
+          <AssociationSet Name="FK_State_Country1" Association="AdviserListDBModel.FK_State_Country1">
+            <End Role="Country" EntitySet="Countries" />
+            <End Role="State" EntitySet="States" />
+          </AssociationSet>
+          </EntityContainer>
+        <EntityType Name="Adviser">
+          <Key>
+            <PropertyRef Name="adviserId" />
+          </Key>
+          <Property Name="adviserId" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="fullName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="displayName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="nric" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="dateOfBirth" Type="DateTime" Precision="3" />
+          <Property Name="gender" Type="String" MaxLength="6" FixedLength="true" Unicode="true" />
+          <Property Name="contactNumber" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="aboutMeShort" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="aboutMe" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="creditCardNumber" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="creditCardExpire" Type="DateTime" Precision="0" />
+          <Property Name="recurringPaymentAgreementFlag" Type="Boolean" />
+          <Property Name="password" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="createdDate" Type="DateTime" Precision="3" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="updatedDate" Type="DateTime" Precision="3" />
+          <Property Name="viewCountFromWeb" Type="Int64" />
+          <Property Name="viewCountFromApp" Type="Int64" />
+          <Property Name="activeFlag" Type="Boolean" annotation:StoreGeneratedPattern="None" />
+          <NavigationProperty Name="AdviserCertificates" Relationship="AdviserListDBModel.FK_AdviserCertificate_Adviser" FromRole="Adviser" ToRole="AdviserCertificate" />
+          <NavigationProperty Name="AdviserCompanies" Relationship="AdviserListDBModel.FK_AdviserCompany_Adviser" FromRole="Adviser" ToRole="AdviserCompany" />
+          <NavigationProperty Name="AdviserHistories" Relationship="AdviserListDBModel.FK_AdviserHistory_Adviser" FromRole="Adviser" ToRole="AdviserHistory" />
+          <NavigationProperty Name="AdviserPhotoes" Relationship="AdviserListDBModel.FK_AdviserPhoto_Adviser" FromRole="Adviser" ToRole="AdviserPhoto" />
+          <NavigationProperty Name="PromotionLocations" Relationship="AdviserListDBModel.FK_PromotionLocation_Adviser" FromRole="Adviser" ToRole="PromotionLocation" />
+          <Property Name="rns" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="AdviserCertificate">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Guid" Nullable="false" />
+          <Property Name="adviserId" Type="Guid" Nullable="false" />
+          <Property Name="certificateName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="certificateDescription" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="createdDate" Type="DateTime" Precision="3" />
+          <Property Name="activeFlag" Type="Boolean" />
+          <NavigationProperty Name="Adviser" Relationship="AdviserListDBModel.FK_AdviserCertificate_Adviser" FromRole="AdviserCertificate" ToRole="Adviser" />
+        </EntityType>
+        <EntityType Name="AdviserCompany">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="adviserId" Type="Guid" Nullable="false" />
+          <Property Name="companyId" Type="Guid" Nullable="false" />
+          <Property Name="designation" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="contactNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="createdDate" Type="DateTime" Precision="3" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="primaryFlag" Type="Boolean" annotation:StoreGeneratedPattern="None" />
+          <Property Name="activeFlag" Type="Boolean" annotation:StoreGeneratedPattern="Computed" />
+          <NavigationProperty Name="Adviser" Relationship="AdviserListDBModel.FK_AdviserCompany_Adviser" FromRole="AdviserCompany" ToRole="Adviser" />
+          <NavigationProperty Name="Company" Relationship="AdviserListDBModel.FK_AdviserCompany_Company" FromRole="AdviserCompany" ToRole="Company" />
+        </EntityType>
+        <EntityType Name="AdviserHistory">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Guid" Nullable="false" />
+          <Property Name="adviserId" Type="Guid" Nullable="false" />
+          <Property Name="latitude" Type="Double" />
+          <Property Name="longitude" Type="Double" />
+          <Property Name="displayFlag" Type="Boolean" />
+          <Property Name="updatedDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Adviser" Relationship="AdviserListDBModel.FK_AdviserHistory_Adviser" FromRole="AdviserHistory" ToRole="Adviser" />
+        </EntityType>
+        <EntityType Name="AdviserPhoto">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="adviserId" Type="Guid" Nullable="false" />
+          <Property Name="location" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="type" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="profileFlag" Type="Boolean" />
+          <Property Name="createdDate" Type="DateTime" Precision="3" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="activeFlag" Type="Boolean" />
+          <NavigationProperty Name="Adviser" Relationship="AdviserListDBModel.FK_AdviserPhoto_Adviser" FromRole="AdviserPhoto" ToRole="Adviser" />
+        </EntityType>
+        <EntityType Name="Company">
+          <Key>
+            <PropertyRef Name="companyId" />
+          </Key>
+          <Property Name="companyId" Type="Guid" Nullable="false" />
+          <Property Name="companyName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="webAddress" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+          <Property Name="address" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="phone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="logo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="createdDate" Type="DateTime" Precision="3" />
+          <Property Name="activeFlag" Type="Boolean" />
+          <NavigationProperty Name="AdviserCompanies" Relationship="AdviserListDBModel.FK_AdviserCompany_Company" FromRole="Company" ToRole="AdviserCompany" />
+        </EntityType>
+        <EntityType Name="PromotionLocation">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="Guid" Nullable="false" />
+          <Property Name="adviserId" Type="Guid" Nullable="false" />
+          <Property Name="locationAddress" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="latitude" Type="Double" />
+          <Property Name="longitude" Type="Double" />
+          <Property Name="effectiveDate" Type="DateTime" Precision="0" />
+          <Property Name="expireDate" Type="DateTime" Precision="0" />
+          <Property Name="createdDate" Type="DateTime" Precision="3" />
+          <Property Name="description" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Adviser" Relationship="AdviserListDBModel.FK_PromotionLocation_Adviser" FromRole="PromotionLocation" ToRole="Adviser" />
+          <Property Name="activeFlag" Type="Boolean" />
+          <Property Name="effectiveTime" Type="Time" Precision="3" />
+          <Property Name="expireTime" Type="Time" Precision="3" />
+          <Property Name="name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="cityId" Type="Int32" />
+          <NavigationProperty Name="City" Relationship="AdviserListDBModel.FK_PromotionLocation_Adviser2" FromRole="PromotionLocation" ToRole="City" />
+        </EntityType>
+        <Association Name="FK_AdviserCertificate_Adviser">
+          <End Type="AdviserListDBModel.Adviser" Role="Adviser" Multiplicity="1" />
+          <End Type="AdviserListDBModel.AdviserCertificate" Role="AdviserCertificate" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Adviser">
+              <PropertyRef Name="adviserId" />
+            </Principal>
+            <Dependent Role="AdviserCertificate">
+              <PropertyRef Name="adviserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AdviserCompany_Adviser">
+          <End Type="AdviserListDBModel.Adviser" Role="Adviser" Multiplicity="1" />
+          <End Type="AdviserListDBModel.AdviserCompany" Role="AdviserCompany" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Adviser">
+              <PropertyRef Name="adviserId" />
+            </Principal>
+            <Dependent Role="AdviserCompany">
+              <PropertyRef Name="adviserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AdviserHistory_Adviser">
+          <End Type="AdviserListDBModel.Adviser" Role="Adviser" Multiplicity="1" />
+          <End Type="AdviserListDBModel.AdviserHistory" Role="AdviserHistory" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Adviser">
+              <PropertyRef Name="adviserId" />
+            </Principal>
+            <Dependent Role="AdviserHistory">
+              <PropertyRef Name="adviserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AdviserPhoto_Adviser">
+          <End Type="AdviserListDBModel.Adviser" Role="Adviser" Multiplicity="1" />
+          <End Type="AdviserListDBModel.AdviserPhoto" Role="AdviserPhoto" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Adviser">
+              <PropertyRef Name="adviserId" />
+            </Principal>
+            <Dependent Role="AdviserPhoto">
+              <PropertyRef Name="adviserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PromotionLocation_Adviser">
+          <End Type="AdviserListDBModel.Adviser" Role="Adviser" Multiplicity="1" />
+          <End Type="AdviserListDBModel.PromotionLocation" Role="PromotionLocation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Adviser">
+              <PropertyRef Name="adviserId" />
+            </Principal>
+            <Dependent Role="PromotionLocation">
+              <PropertyRef Name="adviserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_AdviserCompany_Company">
+          <End Type="AdviserListDBModel.Company" Role="Company" Multiplicity="1" />
+          <End Type="AdviserListDBModel.AdviserCompany" Role="AdviserCompany" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Company">
+              <PropertyRef Name="companyId" />
+            </Principal>
+            <Dependent Role="AdviserCompany">
+              <PropertyRef Name="companyId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <ComplexType Name="AdviserCompanySelectAll_Result">
+          <Property Type="Guid" Name="id" Nullable="false" />
+          <Property Type="Guid" Name="adviserId" Nullable="false" />
+          <Property Type="Guid" Name="companyId" Nullable="false" />
+          <Property Type="String" Name="designation" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="contactNumber" Nullable="true" MaxLength="50" />
+          <Property Type="String" Name="email" Nullable="true" MaxLength="100" />
+          <Property Type="Boolean" Name="primaryFlag" Nullable="true" />
+        </ComplexType>
+        <EntityType Name="City">
+          <Key>
+            <PropertyRef Name="cityId" />
+          </Key>
+          <Property Name="cityId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="stateId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="PromotionLocations1" Relationship="AdviserListDBModel.FK_PromotionLocation_Adviser2" FromRole="City" ToRole="PromotionLocation" />
+          <NavigationProperty Name="State" Relationship="AdviserListDBModel.FK_City_State1" FromRole="City" ToRole="State" />
+        </EntityType>
+        <EntityType Name="Continent">
+          <Key>
+            <PropertyRef Name="continentId" />
+          </Key>
+          <Property Name="continentId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Countries" Relationship="AdviserListDBModel.FK_Country_Continent11" FromRole="Continent" ToRole="Country" />
+        </EntityType>
+        <EntityType Name="Country">
+          <Key>
+            <PropertyRef Name="countryId" />
+          </Key>
+          <Property Name="countryId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="continentId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Continent" Relationship="AdviserListDBModel.FK_Country_Continent11" FromRole="Country" ToRole="Continent" />
+          <NavigationProperty Name="States" Relationship="AdviserListDBModel.FK_State_Country1" FromRole="Country" ToRole="State" />
+        </EntityType>
+        <EntityType Name="State">
+          <Key>
+            <PropertyRef Name="stateId" />
+          </Key>
+          <Property Name="stateId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns="http://schemas.microsoft.com/ado/2009/11/edm" />
+          <Property Name="name" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="countryId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Cities" Relationship="AdviserListDBModel.FK_City_State1" FromRole="State" ToRole="City" />
+          <NavigationProperty Name="Country" Relationship="AdviserListDBModel.FK_State_Country1" FromRole="State" ToRole="Country" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <Association Name="FK_PromotionLocation_Adviser2">
+          <End Type="AdviserListDBModel.City" Role="City" Multiplicity="0..1" />
+          <End Type="AdviserListDBModel.PromotionLocation" Role="PromotionLocation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="City">
+              <PropertyRef Name="cityId" />
+            </Principal>
+            <Dependent Role="PromotionLocation">
+              <PropertyRef Name="cityId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_City_State1">
+          <End Type="AdviserListDBModel.State" Role="State" Multiplicity="1" />
+          <End Type="AdviserListDBModel.City" Role="City" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="State">
+              <PropertyRef Name="stateId" />
+            </Principal>
+            <Dependent Role="City">
+              <PropertyRef Name="stateId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Country_Continent11">
+          <End Type="AdviserListDBModel.Continent" Role="Continent" Multiplicity="1" />
+          <End Type="AdviserListDBModel.Country" Role="Country" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Continent">
+              <PropertyRef Name="continentId" />
+            </Principal>
+            <Dependent Role="Country">
+              <PropertyRef Name="continentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_State_Country1">
+          <End Type="AdviserListDBModel.Country" Role="Country" Multiplicity="1" />
+          <End Type="AdviserListDBModel.State" Role="State" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Country">
+              <PropertyRef Name="countryId" />
+            </Principal>
+            <Dependent Role="State">
+              <PropertyRef Name="countryId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="AdviserListDBModelStoreContainer" CdmEntityContainer="AdviserListDBEntities">
+          <EntitySetMapping Name="Advisers">
+            <EntityTypeMapping TypeName="AdviserListDBModel.Adviser">
+              <MappingFragment StoreEntitySet="Adviser">
+                <ScalarProperty Name="rns" ColumnName="rns" />
+                <ScalarProperty Name="activeFlag" ColumnName="activeFlag" />
+                <ScalarProperty Name="viewCountFromApp" ColumnName="viewCountFromApp" />
+                <ScalarProperty Name="viewCountFromWeb" ColumnName="viewCountFromWeb" />
+                <ScalarProperty Name="updatedDate" ColumnName="updatedDate" />
+                <ScalarProperty Name="createdDate" ColumnName="createdDate" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="recurringPaymentAgreementFlag" ColumnName="recurringPaymentAgreementFlag" />
+                <ScalarProperty Name="creditCardExpire" ColumnName="creditCardExpire" />
+                <ScalarProperty Name="creditCardNumber" ColumnName="creditCardNumber" />
+                <ScalarProperty Name="aboutMe" ColumnName="aboutMe" />
+                <ScalarProperty Name="aboutMeShort" ColumnName="aboutMeShort" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="contactNumber" ColumnName="contactNumber" />
+                <ScalarProperty Name="gender" ColumnName="gender" />
+                <ScalarProperty Name="dateOfBirth" ColumnName="dateOfBirth" />
+                <ScalarProperty Name="nric" ColumnName="nric" />
+                <ScalarProperty Name="displayName" ColumnName="displayName" />
+                <ScalarProperty Name="fullName" ColumnName="fullName" />
+                <ScalarProperty Name="adviserId" ColumnName="adviserId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AdviserCertificates">
+            <EntityTypeMapping TypeName="AdviserListDBModel.AdviserCertificate">
+              <MappingFragment StoreEntitySet="AdviserCertificate">
+                <ScalarProperty Name="activeFlag" ColumnName="activeFlag" />
+                <ScalarProperty Name="createdDate" ColumnName="createdDate" />
+                <ScalarProperty Name="certificateDescription" ColumnName="certificateDescription" />
+                <ScalarProperty Name="certificateName" ColumnName="certificateName" />
+                <ScalarProperty Name="adviserId" ColumnName="adviserId" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AdviserCompanies">
+            <EntityTypeMapping TypeName="AdviserListDBModel.AdviserCompany">
+              <MappingFragment StoreEntitySet="AdviserCompany">
+                <ScalarProperty Name="activeFlag" ColumnName="activeFlag" />
+                <ScalarProperty Name="primaryFlag" ColumnName="primaryFlag" />
+                <ScalarProperty Name="createdDate" ColumnName="createdDate" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="contactNumber" ColumnName="contactNumber" />
+                <ScalarProperty Name="designation" ColumnName="designation" />
+                <ScalarProperty Name="companyId" ColumnName="companyId" />
+                <ScalarProperty Name="adviserId" ColumnName="adviserId" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AdviserHistories">
+            <EntityTypeMapping TypeName="AdviserListDBModel.AdviserHistory">
+              <MappingFragment StoreEntitySet="AdviserHistory">
+                <ScalarProperty Name="updatedDate" ColumnName="updatedDate" />
+                <ScalarProperty Name="displayFlag" ColumnName="displayFlag" />
+                <ScalarProperty Name="longitude" ColumnName="longitude" />
+                <ScalarProperty Name="latitude" ColumnName="latitude" />
+                <ScalarProperty Name="adviserId" ColumnName="adviserId" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="AdviserPhotoes">
+            <EntityTypeMapping TypeName="AdviserListDBModel.AdviserPhoto">
+              <MappingFragment StoreEntitySet="AdviserPhoto">
+                <ScalarProperty Name="activeFlag" ColumnName="activeFlag" />
+                <ScalarProperty Name="createdDate" ColumnName="createdDate" />
+                <ScalarProperty Name="profileFlag" ColumnName="profileFlag" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="location" ColumnName="location" />
+                <ScalarProperty Name="adviserId" ColumnName="adviserId" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Companies">
+            <EntityTypeMapping TypeName="AdviserListDBModel.Company">
+              <MappingFragment StoreEntitySet="Company">
+                <ScalarProperty Name="activeFlag" ColumnName="activeFlag" />
+                <ScalarProperty Name="createdDate" ColumnName="createdDate" />
+                <ScalarProperty Name="logo" ColumnName="logo" />
+                <ScalarProperty Name="phone" ColumnName="phone" />
+                <ScalarProperty Name="address" ColumnName="address" />
+                <ScalarProperty Name="webAddress" ColumnName="webAddress" />
+                <ScalarProperty Name="companyName" ColumnName="companyName" />
+                <ScalarProperty Name="companyId" ColumnName="companyId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PromotionLocations">
+            <EntityTypeMapping TypeName="AdviserListDBModel.PromotionLocation">
+              <MappingFragment StoreEntitySet="PromotionLocation">
+                <ScalarProperty Name="cityId" ColumnName="cityId" />
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="expireTime" ColumnName="expireTime" />
+                <ScalarProperty Name="effectiveTime" ColumnName="effectiveTime" />
+                <ScalarProperty Name="activeFlag" ColumnName="activeFlag" />
+                <ScalarProperty Name="description" ColumnName="description" />
+                <ScalarProperty Name="createdDate" ColumnName="createdDate" />
+                <ScalarProperty Name="expireDate" ColumnName="expireDate" />
+                <ScalarProperty Name="effectiveDate" ColumnName="effectiveDate" />
+                <ScalarProperty Name="longitude" ColumnName="longitude" />
+                <ScalarProperty Name="latitude" ColumnName="latitude" />
+                <ScalarProperty Name="locationAddress" ColumnName="locationAddress" />
+                <ScalarProperty Name="adviserId" ColumnName="adviserId" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <FunctionImportMapping FunctionImportName="AdviserCompanyDelete" FunctionName="AdviserListDBModel.Store.AdviserCompanyDelete" />
+          <FunctionImportMapping FunctionImportName="AdviserCompanyInsert" FunctionName="AdviserListDBModel.Store.AdviserCompanyInsert" />
+          <FunctionImportMapping FunctionImportName="AdviserCompanySelectAll" FunctionName="AdviserListDBModel.Store.AdviserCompanySelectAll">
+            <ResultMapping>
+              <ComplexTypeMapping TypeName="AdviserListDBModel.AdviserCompanySelectAll_Result">
+                <ScalarProperty Name="id" ColumnName="id" />
+                <ScalarProperty Name="adviserId" ColumnName="adviserId" />
+                <ScalarProperty Name="companyId" ColumnName="companyId" />
+                <ScalarProperty Name="designation" ColumnName="designation" />
+                <ScalarProperty Name="contactNumber" ColumnName="contactNumber" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="primaryFlag" ColumnName="primaryFlag" />
+              </ComplexTypeMapping>
+            </ResultMapping>
+          </FunctionImportMapping>
+          <FunctionImportMapping FunctionImportName="AdviserCompanyUpdate" FunctionName="AdviserListDBModel.Store.AdviserCompanyUpdate" />
+          <FunctionImportMapping FunctionImportName="AdviserCertificateDelete" FunctionName="AdviserListDBModel.Store.AdviserCertificateDelete" />
+          <FunctionImportMapping FunctionImportName="AdviserCertificateInsert" FunctionName="AdviserListDBModel.Store.AdviserCertificateInsert" />
+          <FunctionImportMapping FunctionImportName="AdviserCertificateUpdate" FunctionName="AdviserListDBModel.Store.AdviserCertificateUpdate" />
+          <FunctionImportMapping FunctionImportName="AdviserDelete" FunctionName="AdviserListDBModel.Store.AdviserDelete" />
+          <FunctionImportMapping FunctionImportName="AdviserHistoryInsert" FunctionName="AdviserListDBModel.Store.AdviserHistoryInsert" />
+          <FunctionImportMapping FunctionImportName="AdviserHistoryUpdate" FunctionName="AdviserListDBModel.Store.AdviserHistoryUpdate" />
+          <FunctionImportMapping FunctionImportName="AdviserInsert" FunctionName="AdviserListDBModel.Store.AdviserInsert" />
+          <FunctionImportMapping FunctionImportName="AdviserUpdate" FunctionName="AdviserListDBModel.Store.AdviserUpdate" />
+          <FunctionImportMapping FunctionImportName="PromotionLocationDelete" FunctionName="AdviserListDBModel.Store.PromotionLocationDelete" />
+          <FunctionImportMapping FunctionImportName="PromotionLocationInsert" FunctionName="AdviserListDBModel.Store.PromotionLocationInsert" />
+          <FunctionImportMapping FunctionImportName="PromotionLocationUpdate" FunctionName="AdviserListDBModel.Store.PromotionLocationUpdate" />
+          <FunctionImportMapping FunctionImportName="AdviserPhotoInsert" FunctionName="AdviserListDBModel.Store.AdviserPhotoInsert" />
+          <FunctionImportMapping FunctionImportName="AdviserPhotoUpdate" FunctionName="AdviserListDBModel.Store.AdviserPhotoUpdate" />
+          <EntitySetMapping Name="Cities">
+            <EntityTypeMapping TypeName="AdviserListDBModel.City">
+              <MappingFragment StoreEntitySet="City">
+                <ScalarProperty Name="cityId" ColumnName="cityId" />
+                <ScalarProperty Name="stateId" ColumnName="stateId" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Continents">
+            <EntityTypeMapping TypeName="AdviserListDBModel.Continent">
+              <MappingFragment StoreEntitySet="Continent">
+                <ScalarProperty Name="continentId" ColumnName="continentId" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Countries">
+            <EntityTypeMapping TypeName="AdviserListDBModel.Country">
+              <MappingFragment StoreEntitySet="Country">
+                <ScalarProperty Name="countryId" ColumnName="countryId" />
+                <ScalarProperty Name="continentId" ColumnName="continentId" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="States">
+            <EntityTypeMapping TypeName="AdviserListDBModel.State">
+              <MappingFragment StoreEntitySet="State">
+                <ScalarProperty Name="stateId" ColumnName="stateId" />
+                <ScalarProperty Name="countryId" ColumnName="countryId" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="AdviserListDBModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="definition" ColumnName="definition" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="name" ColumnName="name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

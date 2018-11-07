@@ -1,0 +1,202 @@
+﻿@model AdviserListWebApplication.Models.Adviser
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Adviser</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.fullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.displayName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.displayName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nric)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nric)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.rns)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.rns)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dateOfBirth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dateOfBirth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.contactNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.contactNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.aboutMeShort)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.aboutMeShort)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.aboutMe)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.aboutMe)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.creditCardNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.creditCardNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.creditCardExpire)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.creditCardExpire)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.createdDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.createdDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.updatedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.updatedDate)
+        </dd>
+
+        @foreach (var item in Model.AdviserCompanies)
+        {
+            <dt>
+                @Html.DisplayNameFor(model => item.Company.companyName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => item.Company.companyName)
+            </dd>
+        }
+
+        @foreach (var item in Model.AdviserHistories)
+        {
+            <dt>
+                @Html.DisplayNameFor(model => item.latitude)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => item.latitude)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => item.longitude)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => item.longitude)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => item.updatedDate)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => item.updatedDate)
+            </dd>
+        }
+
+        @foreach (var item in Model.AdviserPhotoes)
+        {
+            <dt>
+                @Html.DisplayNameFor(model => item.location)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => item.location)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => item.name)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => item.name)
+            </dd>
+            <dt>
+                @Html.DisplayNameFor(model => item.type)
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => item.type)
+            </dd>
+            <dt>
+                Image
+            </dt>
+            <dd>
+                
+                <img src="@(Url.Content(item.location+item.adviserId+'/'+item.name+item.type))" alt="" />
+                @*@{ var location = new HtmlString(item.location + "\\" + item.name + "." + item.type);}
+                    @location*@
+            </dd>
+        }
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.adviserId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

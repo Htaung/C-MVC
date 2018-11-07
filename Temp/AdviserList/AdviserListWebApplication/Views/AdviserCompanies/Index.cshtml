@@ -1,0 +1,75 @@
+﻿@model IEnumerable<AdviserListWebApplication.Models.AdviserCompany>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.designation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.contactNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.createdDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.primaryFlag)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.activeFlag)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Adviser.fullName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Company.companyName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.designation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.contactNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.createdDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.primaryFlag)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.activeFlag)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Adviser.fullName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Company.companyName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

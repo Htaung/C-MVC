@@ -1,0 +1,4 @@
+C:\Users\Htaung\Desktop\C# MVC\Day 7\BusinessEntities\bin\Debug\BusinessEntities.dll
+C:\Users\Htaung\Desktop\C# MVC\Day 7\BusinessEntities\bin\Debug\BusinessEntities.pdb
+C:\Users\Htaung\Desktop\C# MVC\Day 7\BusinessEntities\obj\Debug\BusinessEntities.dll
+C:\Users\Htaung\Desktop\C# MVC\Day 7\BusinessEntities\obj\Debug\BusinessEntities.pdb

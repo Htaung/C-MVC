@@ -1,0 +1,82 @@
+﻿@model AdviserListWebApplication.Models.AdviserCompany
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AdviserCompany</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.designation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.designation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.contactNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.contactNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.createdDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.createdDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.primaryFlag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.primaryFlag)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.activeFlag)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.activeFlag)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Adviser.fullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adviser.fullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Company.companyName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Company.companyName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

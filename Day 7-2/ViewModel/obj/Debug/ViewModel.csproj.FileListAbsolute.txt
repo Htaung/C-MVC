@@ -1,0 +1,10 @@
+C:\Users\Htaung\Desktop\C# MVC\Day 7-1\ViewModel\obj\Debug\ViewModel.csprojResolveAssemblyReference.cache
+C:\Users\Htaung\Desktop\C# MVC\Day 7-1\ViewModel\bin\Debug\ViewModel.dll
+C:\Users\Htaung\Desktop\C# MVC\Day 7-1\ViewModel\bin\Debug\ViewModel.pdb
+C:\Users\Htaung\Desktop\C# MVC\Day 7-1\ViewModel\obj\Debug\ViewModel.dll
+C:\Users\Htaung\Desktop\C# MVC\Day 7-1\ViewModel\obj\Debug\ViewModel.pdb
+C:\Users\Htaung\Desktop\C# MVC\Day 7-2\ViewModel\bin\Debug\ViewModel.dll
+C:\Users\Htaung\Desktop\C# MVC\Day 7-2\ViewModel\bin\Debug\ViewModel.pdb
+C:\Users\Htaung\Desktop\C# MVC\Day 7-2\ViewModel\obj\Debug\ViewModel.csprojResolveAssemblyReference.cache
+C:\Users\Htaung\Desktop\C# MVC\Day 7-2\ViewModel\obj\Debug\ViewModel.dll
+C:\Users\Htaung\Desktop\C# MVC\Day 7-2\ViewModel\obj\Debug\ViewModel.pdb

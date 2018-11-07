@@ -1,0 +1,43 @@
+﻿@using TestMVC.ViewModel
+@model EmployeeListViewModel
+
+@{
+    Layout = "~/Views/Shared/MyLayout.cshtml";
+}
+
+@section TitleSection{
+    MyView
+}
+
+
+@section ContentBody{
+    
+    <!--
+    <div style="text-align: right">
+        Hello,@Model.UserName
+        <a href="/Authentication/Logout">Logout</a>
+    </div>
+    -->
+
+    <!-- Remove following line from Index.cshtml -->
+    <!-- <a href="/Employee/AddNew">Add New</a> -->
+    
+    @{
+        Html.RenderAction("GetAddNewLink");
+    }
+    <div>
+        <table border="1">
+            <tr>
+                <th> Employee Name: </th>
+                <th> Salary: </th>
+            </tr>
+            @foreach (EmployeeViewModel item in Model.Employees)
+            {
+                <tr>
+                    <td> @item.EmployeeName</td>
+                    <td style="background-color: @item.SalaryColor">@item.Salary</td>
+                </tr>
+            }
+        </table>
+    </div>
+}

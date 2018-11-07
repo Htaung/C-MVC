@@ -1,0 +1,135 @@
+﻿@model IEnumerable<AdviserListWebApplication.Models.Adviser>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.fullName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.displayName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nric)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.rns)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.dateOfBirth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.contactNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.aboutMeShort)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.aboutMe)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.creditCardNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.creditCardExpire)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.createdDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.updatedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.viewCountFromWeb)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model=>model.viewCountFromApp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.activeFlag)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.fullName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.displayName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nric)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.rns)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dateOfBirth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.contactNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.aboutMeShort)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.aboutMe)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.creditCardNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.creditCardExpire)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.createdDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.updatedDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.viewCountFromWeb)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.viewCountFromApp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.activeFlag)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.adviserId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.adviserId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.adviserId })
+        </td>
+    </tr>
+}
+
+</table>

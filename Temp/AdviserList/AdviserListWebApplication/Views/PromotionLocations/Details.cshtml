@@ -1,0 +1,98 @@
+﻿@model AdviserListWebApplication.Models.PromotionLocation
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PromotionLocation</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.locationAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.locationAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.latitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.latitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.longitude)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.longitude)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.effectiveDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.effectiveDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.expireDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.expireDate)
+        </dd>
+        
+        <dt>
+            @Html.DisplayNameFor(model => model.effectiveTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.effectiveTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.expireTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.expireTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.createdDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.createdDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Adviser.fullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adviser.fullName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

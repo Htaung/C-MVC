@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MyView1</title>
+</head>
+<body>
+    <div> 
+        @*@model TestMVC.Models.Employee*@ 
+       
+         @using TestMVC.Models
+        @model Employee
+          [____b____] Employee Details <br/>
+          Employee Name: @Model.FirstName @Model.LastName
+            <br/>
+           @if(Model.Salary > 15000)
+           {
+                <span style="background-color: yellow"> 
+                    Employee Salary: @Model.Salary.ToString("C")
+                </span>
+           }    
+    </div>
+</body>
+</html>

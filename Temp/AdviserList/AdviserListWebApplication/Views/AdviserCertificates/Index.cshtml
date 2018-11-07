@@ -1,0 +1,51 @@
+﻿@model IEnumerable<AdviserListWebApplication.Models.AdviserCertificate>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.certificateName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.certificateDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.activeFlag)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Adviser.fullName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.certificateName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.certificateDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.activeFlag)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Adviser.fullName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.adviserCertificateId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.adviserCertificateId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.adviserCertificateId })
+        </td>
+    </tr>
+}
+
+</table>

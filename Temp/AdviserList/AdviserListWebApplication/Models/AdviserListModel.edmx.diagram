@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d314f46d86484fb5925ae82451011ad3" Name="Diagram1" ZoomLevel="99">
+        <EntityTypeShape EntityType="AdviserListDBModel.Adviser" Width="1.75" PointX="1.625" PointY="5" />
+        <EntityTypeShape EntityType="AdviserListDBModel.AdviserCertificate" Width="1.5" PointX="1" PointY="13.125" />
+        <EntityTypeShape EntityType="AdviserListDBModel.AdviserCompany" Width="1.5" PointX="6.875" PointY="6.375" />
+        <EntityTypeShape EntityType="AdviserListDBModel.AdviserHistory" Width="1.5" PointX="3.875" PointY="1.625" />
+        <EntityTypeShape EntityType="AdviserListDBModel.AdviserPhoto" Width="1.5" PointX="3.875" PointY="4.75" />
+        <EntityTypeShape EntityType="AdviserListDBModel.Company" Width="1.625" PointX="4.625" PointY="8.5" />
+        <EntityTypeShape EntityType="AdviserListDBModel.PromotionLocation" Width="1.5" PointX="3.625" PointY="12" />
+        <AssociationConnector Association="AdviserListDBModel.FK_AdviserCertificate_Adviser" />
+        <AssociationConnector Association="AdviserListDBModel.FK_AdviserCompany_Adviser" />
+        <AssociationConnector Association="AdviserListDBModel.FK_AdviserHistory_Adviser" />
+        <AssociationConnector Association="AdviserListDBModel.FK_AdviserPhoto_Adviser" />
+        <AssociationConnector Association="AdviserListDBModel.FK_PromotionLocation_Adviser" />
+        <AssociationConnector Association="AdviserListDBModel.FK_AdviserCompany_Company" />
+        <EntityTypeShape EntityType="AdviserListDBModel.City" Width="1.5" PointX="13.125" PointY="1" />
+        <EntityTypeShape EntityType="AdviserListDBModel.Continent" Width="1.5" PointX="6.375" PointY="1.125" />
+        <EntityTypeShape EntityType="AdviserListDBModel.Country" Width="1.5" PointX="8.625" PointY="0.875" />
+        <EntityTypeShape EntityType="AdviserListDBModel.State" Width="1.5" PointX="10.875" PointY="0.875" />
+        <EntityTypeShape EntityType="AdviserListDBModel.sysdiagram" Width="1.5" PointX="0.75" PointY="0.75" />
+        <AssociationConnector Association="AdviserListDBModel.FK_PromotionLocation_Adviser2" />
+        <AssociationConnector Association="AdviserListDBModel.FK_City_State1" />
+        <AssociationConnector Association="AdviserListDBModel.FK_Country_Continent11" />
+        <AssociationConnector Association="AdviserListDBModel.FK_State_Country1" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,283 @@
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\ApplicationInsights.config
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\csc.exe
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\csc.exe.config
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\csc.rsp
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\csi.exe
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\csi.exe.config
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\csi.rsp
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\System.AppContext.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\System.Console.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\System.Diagnostics.Process.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\System.IO.Compression.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\System.IO.Pipes.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\System.Security.Claims.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\System.Threading.Thread.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\System.ValueTuple.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\System.Xml.XPath.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\vbc.exe
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\vbc.exe.config
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\vbc.rsp
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\VBCSCompiler.exe
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\AdviserListWebApplication.dll.config
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\AdviserListWebApplication.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\AdviserListWebApplication.pdb
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Antlr3.Runtime.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\EntityFramework.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\EntityFramework.SqlServer.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.Web.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.ApplicationInsights.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Newtonsoft.Json.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Owin.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.Helpers.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.Mvc.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.Optimization.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.Razor.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.WebPages.Deployment.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.WebPages.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.WebPages.Razor.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\WebGrease.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Antlr3.Runtime.pdb
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.Web.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.ApplicationInsights.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Newtonsoft.Json.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.Helpers.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.Mvc.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.Optimization.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.Razor.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.WebPages.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.WebPages.Deployment.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.WebPages.Razor.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\EntityFramework.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\EntityFramework.SqlServer.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\obj\Debug\AdviserListWebApplication.csprojResolveAssemblyReference.cache
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\obj\Debug\AdviserListWebApplication.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\obj\Debug\AdviserListWebApplication.pdb
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Net.Http.Formatting.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.Http.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.Http.WebHost.dll
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Net.Http.Formatting.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.Http.xml
+C:\Users\sumin\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.Http.WebHost.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\ApplicationInsights.config
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\AdviserListWebApplication.dll.config
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\AdviserListWebApplication.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\AdviserListWebApplication.pdb
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Antlr3.Runtime.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\EntityFramework.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\EntityFramework.SqlServer.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.Web.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.ApplicationInsights.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Newtonsoft.Json.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Owin.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Net.Http.Formatting.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.Helpers.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.Http.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.Http.WebHost.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.Mvc.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.Optimization.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.Razor.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.WebPages.Deployment.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.WebPages.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.WebPages.Razor.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\WebGrease.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Antlr3.Runtime.pdb
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.Web.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.ApplicationInsights.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Newtonsoft.Json.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Net.Http.Formatting.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.Http.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.Http.WebHost.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.Helpers.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.Mvc.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.Optimization.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.Razor.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.WebPages.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.WebPages.Deployment.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\System.Web.WebPages.Razor.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\EntityFramework.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\EntityFramework.SqlServer.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\obj\Debug\AdviserListWebApplication.dll
+C:\Users\SuMingYuan\Documents\MyProject\AdvisersList\SourceCode\Web\AdviserList\AdviserListWebApplication\obj\Debug\AdviserListWebApplication.pdb
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\ApplicationInsights.config
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\AdviserListWebApplication.dll.config
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\AdviserListWebApplication.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\AdviserListWebApplication.pdb
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Antlr3.Runtime.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\EntityFramework.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\EntityFramework.SqlServer.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.Web.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Newtonsoft.Json.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Owin.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\System.Net.Http.Formatting.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\System.Web.Helpers.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\System.Web.Http.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\System.Web.Http.WebHost.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\System.Web.Mvc.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\System.Web.Optimization.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\System.Web.Razor.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\System.Web.WebPages.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\System.Web.WebPages.Razor.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\WebGrease.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Antlr3.Runtime.pdb
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.Web.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Newtonsoft.Json.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\System.Net.Http.Formatting.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\System.Web.Http.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\System.Web.Http.WebHost.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\System.Web.Helpers.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\System.Web.Mvc.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\System.Web.Optimization.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\System.Web.Razor.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\System.Web.WebPages.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\System.Web.WebPages.Razor.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\EntityFramework.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\EntityFramework.SqlServer.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\obj\Debug\AdviserListWebApplication.csprojResolveAssemblyReference.cache
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\obj\Debug\AdviserListWebApplication.dll
+C:\Users\Htaung\Desktop\C# MVC\Temp\AdviserList\AdviserListWebApplication\obj\Debug\AdviserListWebApplication.pdb

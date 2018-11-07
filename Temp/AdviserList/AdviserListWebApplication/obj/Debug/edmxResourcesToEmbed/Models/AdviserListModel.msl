@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AdviserListDBModelStoreContainer" CdmEntityContainer="AdviserListDBEntities">
+    <EntitySetMapping Name="Advisers">
+      <EntityTypeMapping TypeName="AdviserListDBModel.Adviser">
+        <MappingFragment StoreEntitySet="Adviser">
+          <ScalarProperty Name="rns" ColumnName="rns" />
+          <ScalarProperty Name="activeFlag" ColumnName="activeFlag" />
+          <ScalarProperty Name="viewCountFromApp" ColumnName="viewCountFromApp" />
+          <ScalarProperty Name="viewCountFromWeb" ColumnName="viewCountFromWeb" />
+          <ScalarProperty Name="updatedDate" ColumnName="updatedDate" />
+          <ScalarProperty Name="createdDate" ColumnName="createdDate" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="recurringPaymentAgreementFlag" ColumnName="recurringPaymentAgreementFlag" />
+          <ScalarProperty Name="creditCardExpire" ColumnName="creditCardExpire" />
+          <ScalarProperty Name="creditCardNumber" ColumnName="creditCardNumber" />
+          <ScalarProperty Name="aboutMe" ColumnName="aboutMe" />
+          <ScalarProperty Name="aboutMeShort" ColumnName="aboutMeShort" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="contactNumber" ColumnName="contactNumber" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="dateOfBirth" ColumnName="dateOfBirth" />
+          <ScalarProperty Name="nric" ColumnName="nric" />
+          <ScalarProperty Name="displayName" ColumnName="displayName" />
+          <ScalarProperty Name="fullName" ColumnName="fullName" />
+          <ScalarProperty Name="adviserId" ColumnName="adviserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdviserCertificates">
+      <EntityTypeMapping TypeName="AdviserListDBModel.AdviserCertificate">
+        <MappingFragment StoreEntitySet="AdviserCertificate">
+          <ScalarProperty Name="activeFlag" ColumnName="activeFlag" />
+          <ScalarProperty Name="createdDate" ColumnName="createdDate" />
+          <ScalarProperty Name="certificateDescription" ColumnName="certificateDescription" />
+          <ScalarProperty Name="certificateName" ColumnName="certificateName" />
+          <ScalarProperty Name="adviserId" ColumnName="adviserId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdviserCompanies">
+      <EntityTypeMapping TypeName="AdviserListDBModel.AdviserCompany">
+        <MappingFragment StoreEntitySet="AdviserCompany">
+          <ScalarProperty Name="activeFlag" ColumnName="activeFlag" />
+          <ScalarProperty Name="primaryFlag" ColumnName="primaryFlag" />
+          <ScalarProperty Name="createdDate" ColumnName="createdDate" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="contactNumber" ColumnName="contactNumber" />
+          <ScalarProperty Name="designation" ColumnName="designation" />
+          <ScalarProperty Name="companyId" ColumnName="companyId" />
+          <ScalarProperty Name="adviserId" ColumnName="adviserId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdviserHistories">
+      <EntityTypeMapping TypeName="AdviserListDBModel.AdviserHistory">
+        <MappingFragment StoreEntitySet="AdviserHistory">
+          <ScalarProperty Name="updatedDate" ColumnName="updatedDate" />
+          <ScalarProperty Name="displayFlag" ColumnName="displayFlag" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="adviserId" ColumnName="adviserId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AdviserPhotoes">
+      <EntityTypeMapping TypeName="AdviserListDBModel.AdviserPhoto">
+        <MappingFragment StoreEntitySet="AdviserPhoto">
+          <ScalarProperty Name="activeFlag" ColumnName="activeFlag" />
+          <ScalarProperty Name="createdDate" ColumnName="createdDate" />
+          <ScalarProperty Name="profileFlag" ColumnName="profileFlag" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="location" ColumnName="location" />
+          <ScalarProperty Name="adviserId" ColumnName="adviserId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="AdviserListDBModel.Company">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="activeFlag" ColumnName="activeFlag" />
+          <ScalarProperty Name="createdDate" ColumnName="createdDate" />
+          <ScalarProperty Name="logo" ColumnName="logo" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="address" ColumnName="address" />
+          <ScalarProperty Name="webAddress" ColumnName="webAddress" />
+          <ScalarProperty Name="companyName" ColumnName="companyName" />
+          <ScalarProperty Name="companyId" ColumnName="companyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PromotionLocations">
+      <EntityTypeMapping TypeName="AdviserListDBModel.PromotionLocation">
+        <MappingFragment StoreEntitySet="PromotionLocation">
+          <ScalarProperty Name="cityId" ColumnName="cityId" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="expireTime" ColumnName="expireTime" />
+          <ScalarProperty Name="effectiveTime" ColumnName="effectiveTime" />
+          <ScalarProperty Name="activeFlag" ColumnName="activeFlag" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="createdDate" ColumnName="createdDate" />
+          <ScalarProperty Name="expireDate" ColumnName="expireDate" />
+          <ScalarProperty Name="effectiveDate" ColumnName="effectiveDate" />
+          <ScalarProperty Name="longitude" ColumnName="longitude" />
+          <ScalarProperty Name="latitude" ColumnName="latitude" />
+          <ScalarProperty Name="locationAddress" ColumnName="locationAddress" />
+          <ScalarProperty Name="adviserId" ColumnName="adviserId" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="AdviserCompanyDelete" FunctionName="AdviserListDBModel.Store.AdviserCompanyDelete" />
+    <FunctionImportMapping FunctionImportName="AdviserCompanyInsert" FunctionName="AdviserListDBModel.Store.AdviserCompanyInsert" />
+    <FunctionImportMapping FunctionImportName="AdviserCompanySelectAll" FunctionName="AdviserListDBModel.Store.AdviserCompanySelectAll">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="AdviserListDBModel.AdviserCompanySelectAll_Result">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="adviserId" ColumnName="adviserId" />
+          <ScalarProperty Name="companyId" ColumnName="companyId" />
+          <ScalarProperty Name="designation" ColumnName="designation" />
+          <ScalarProperty Name="contactNumber" ColumnName="contactNumber" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="primaryFlag" ColumnName="primaryFlag" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="AdviserCompanyUpdate" FunctionName="AdviserListDBModel.Store.AdviserCompanyUpdate" />
+    <FunctionImportMapping FunctionImportName="AdviserCertificateDelete" FunctionName="AdviserListDBModel.Store.AdviserCertificateDelete" />
+    <FunctionImportMapping FunctionImportName="AdviserCertificateInsert" FunctionName="AdviserListDBModel.Store.AdviserCertificateInsert" />
+    <FunctionImportMapping FunctionImportName="AdviserCertificateUpdate" FunctionName="AdviserListDBModel.Store.AdviserCertificateUpdate" />
+    <FunctionImportMapping FunctionImportName="AdviserDelete" FunctionName="AdviserListDBModel.Store.AdviserDelete" />
+    <FunctionImportMapping FunctionImportName="AdviserHistoryInsert" FunctionName="AdviserListDBModel.Store.AdviserHistoryInsert" />
+    <FunctionImportMapping FunctionImportName="AdviserHistoryUpdate" FunctionName="AdviserListDBModel.Store.AdviserHistoryUpdate" />
+    <FunctionImportMapping FunctionImportName="AdviserInsert" FunctionName="AdviserListDBModel.Store.AdviserInsert" />
+    <FunctionImportMapping FunctionImportName="AdviserUpdate" FunctionName="AdviserListDBModel.Store.AdviserUpdate" />
+    <FunctionImportMapping FunctionImportName="PromotionLocationDelete" FunctionName="AdviserListDBModel.Store.PromotionLocationDelete" />
+    <FunctionImportMapping FunctionImportName="PromotionLocationInsert" FunctionName="AdviserListDBModel.Store.PromotionLocationInsert" />
+    <FunctionImportMapping FunctionImportName="PromotionLocationUpdate" FunctionName="AdviserListDBModel.Store.PromotionLocationUpdate" />
+    <FunctionImportMapping FunctionImportName="AdviserPhotoInsert" FunctionName="AdviserListDBModel.Store.AdviserPhotoInsert" />
+    <FunctionImportMapping FunctionImportName="AdviserPhotoUpdate" FunctionName="AdviserListDBModel.Store.AdviserPhotoUpdate" />
+    <EntitySetMapping Name="Cities">
+      <EntityTypeMapping TypeName="AdviserListDBModel.City">
+        <MappingFragment StoreEntitySet="City">
+          <ScalarProperty Name="cityId" ColumnName="cityId" />
+          <ScalarProperty Name="stateId" ColumnName="stateId" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Continents">
+      <EntityTypeMapping TypeName="AdviserListDBModel.Continent">
+        <MappingFragment StoreEntitySet="Continent">
+          <ScalarProperty Name="continentId" ColumnName="continentId" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="AdviserListDBModel.Country">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="countryId" ColumnName="countryId" />
+          <ScalarProperty Name="continentId" ColumnName="continentId" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="States">
+      <EntityTypeMapping TypeName="AdviserListDBModel.State">
+        <MappingFragment StoreEntitySet="State">
+          <ScalarProperty Name="stateId" ColumnName="stateId" />
+          <ScalarProperty Name="countryId" ColumnName="countryId" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="AdviserListDBModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="definition" ColumnName="definition" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
